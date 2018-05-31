@@ -11,8 +11,10 @@ A simple bash script to create Epicodus projects and intialize the git pairs fil
 ## Setup
 
 1. Clone the repo
+1. Navigate into the clone directory
 1. Run $ chmod 777 ./config-tool.sh
 1. Run $ ./config-tool.sh
+1. Follow the prompt
 
 ## Contribution Requirements
 
