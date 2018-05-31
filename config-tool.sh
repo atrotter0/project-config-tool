@@ -6,7 +6,7 @@ echo Do you need to set up your git pairs file? Enter y/n
 read input
 
 if [ $input == "yes" ] || [ $input == "y" ] || [ $input == "Y" ]
-then 
+then
   # Get user 1 data
   echo Enter first pair initials, first name, last name, and email with spaces between each value.
   echo example: fb Frodo Baggins frodo@shire.com
@@ -52,11 +52,12 @@ then
   touch index.html
   mkdir css js
   touch css/styles.css js/scripts.js
+  touch README.md
 
   # Initialize git
   git init
   sleep 2
-  git pair $user1Initials user2Initials
+  git pair $user1Initials $user2Initials
 
   # Navigate to and open project in finder
   cd ..
