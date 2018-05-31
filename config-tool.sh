@@ -42,6 +42,10 @@ then
   echo Please enter the name of the directory you want to create:
   read directoryName
 
+  echo Please enter your pairs initials:
+  echo example: fb sg
+  read user1Initials user2Initials
+
   echo Creating directory $directoryName and building project...
 
   # Build project
