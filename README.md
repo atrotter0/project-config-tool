@@ -28,7 +28,7 @@ A simple bash script to create Epicodus projects and intialize the git pairs fil
 
 ## Links
 
-* [Github Repo] ()
+* [Github Repo] (https://github.com/atrotter0/project-config-tool)
 
 ## License
 
