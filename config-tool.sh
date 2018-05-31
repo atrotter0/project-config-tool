@@ -1,11 +1,11 @@
 #!/bin/bash
 # A Bash script to configure the git pairs file and construct basic project structure.
 
-# Set up git pairs
+# Prompt and set up git pairs file
 echo Do you need to set up your git pairs file? Enter y/n
-read gitPairResponse
+read input
 
-if [ $gitPairResponse == "yes" ] || [ $gitPairResponse == "y" ] || [ $gitPairResponse == "Y" ]
+if [ $input == "yes" ] || [ $input == "y" ] || [ $input == "Y" ]
 then 
   # Get user 1 data
   echo Enter first pair initials, first name, last name, and email with spaces between each value.
@@ -22,7 +22,6 @@ then
   # Build pairs file
   cd
   touch .pairs
-  echo > .pairs
   echo 'pairs:' >> .pairs
   echo "  $user1Initials: $user1FirstName $user1LastName" >> .pairs
   echo "  $user2Initials: $user2FirstName $user2LastName" >> .pairs
@@ -33,27 +32,36 @@ then
   echo Process complete! Git pairs file created!
 fi
 
-# Set up project directory
-echo Please enter the name of the directory you want to create:
-read directoryName
+# Prompt and build project
+echo Do you want to create a new project? Enter y/n
+read input
 
-echo Creating directory $directoryName and building project...
+if [ $input == "yes" ] || [ $input == "y" ] || [ $input == "Y" ]
+then
+  # Set up project directory
+  echo Please enter the name of the directory you want to create:
+  read directoryName
 
-# Build project
-cd
-cd Desktop
-mkdir $directoryName
-cd $directoryName
-touch index.html
-mkdir css js
-touch css/styles.css js/scripts.js
+  echo Creating directory $directoryName and building project...
 
-# Initialize git
-git init
-sleep 2
-git pair $user1Initials user2Initials
+  # Build project
+  cd
+  cd Desktop
+  mkdir $directoryName
+  cd $directoryName
+  touch index.html
+  mkdir css js
+  touch css/styles.css js/scripts.js
 
-# Navigate to and open project in finder
-cd ..
-open $directoryName
-echo Process complete! Your project has been created!
+  # Initialize git
+  git init
+  sleep 2
+  git pair $user1Initials user2Initials
+
+  # Navigate to and open project in finder
+  cd ..
+  open $directoryName
+  echo Process complete! Your project has been created!
+else
+  echo Goodbye!
+fi
