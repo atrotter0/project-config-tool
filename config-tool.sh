@@ -42,7 +42,7 @@ then
   echo Please enter the name of the directory you want to create:
   read directoryName
 
-  echo Please enter your pairs initials:
+  echo Please enter both pair initials:
   echo example: fb sg
   read user1Initials user2Initials
 
