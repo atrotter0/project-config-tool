@@ -1,6 +1,9 @@
 #!/bin/bash
 # A Bash script to configure the git pairs file and construct basic project structure.
 
+# set base directory to copy assets from
+baseDirectory=$(pwd)
+
 # Prompt and set up git pairs file
 echo Do you need to set up your git pairs file? Enter y/n
 read input
@@ -53,10 +56,10 @@ then
   cd Desktop
   mkdir $directoryName
   cd $directoryName
-  touch index.html
+  cp $baseDirectory/assets/index.html ~/Desktop/$directoryName
   mkdir css js
   touch css/styles.css js/scripts.js
-  touch README.md
+  cp $baseDirectory/assets/README.md ~/Desktop/$directoryName 
 
   # Initialize git
   git init
