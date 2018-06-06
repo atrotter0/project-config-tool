@@ -53,10 +53,10 @@ then
   cd Desktop
   mkdir $directoryName
   cd $directoryName
-  touch index.html
+  cp ~/Desktop/project-config-tool/assets/index.html ~/Desktop/$directoryName
   mkdir css js
   touch css/styles.css js/scripts.js
-  touch README.md
+  cp ~/Desktop/project-config-tool/assets/README.md ~/Desktop/$directoryName 
 
   # Initialize git
   git init
