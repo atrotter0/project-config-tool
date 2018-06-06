@@ -17,7 +17,7 @@
 
 ## Technologies Used
 
-* Bootstrap 3.3.7
+* Bootstrap x.x.x
 * jQuery 3.3.1
 
 ## Links
