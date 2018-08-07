@@ -2,11 +2,11 @@
 
 #### Epicodus Intro to Programming: Lesson, Date
 
-#### By NAME
+#### By Your Name Here
 
 ## Description
 
-
+Add description here
 
 ## Setup/Contribution Requirements
 
@@ -17,15 +17,17 @@
 
 ## Technologies Used
 
-* Bootstrap x.x.x
+* HTML/CSS
+* JavaScript
 * jQuery 3.3.1
+* Bootstrap x.x.x
 
 ## Links
 
-* 
+* Add links here
 
 ## License
 
 This software is licensed under the MIT license.
 
-Copyright (c) 2018 **Name**
+Copyright (c) 2018 **Your Name Here**
