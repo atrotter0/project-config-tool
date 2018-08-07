@@ -8,6 +8,12 @@
 
 Add description here
 
+## Specs
+
+| Behavior | Input | Output |
+|----------|-------|--------|
+| Behavior | input | output |
+
 ## Setup/Contribution Requirements
 
 1. Clone the repo
